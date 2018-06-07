@@ -19,7 +19,7 @@ class Apple: Fruit() {
 }
 
 open class Orange: Fruit() {
-    override fun name() {
+    final override fun name() {
         println("orange")
     }
 }
