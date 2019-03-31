@@ -21,7 +21,6 @@ class MyClass {
 }
 
 
-
 class MyClass2 {
     private fun method1() = object {
         val str: String = "hello"

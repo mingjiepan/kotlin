@@ -1,4 +1,5 @@
 package com.mjie.function
+
 /*
    内联函数
  */

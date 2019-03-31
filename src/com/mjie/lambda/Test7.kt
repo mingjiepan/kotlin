@@ -1,4 +1,5 @@
 package com.mjie.lambda
+
 /*
     闭包
  */

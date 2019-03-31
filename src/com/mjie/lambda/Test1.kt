@@ -1,4 +1,5 @@
 package com.mjie.lambda
+
 /*
     高阶函数（high-order function）与lambda
     lambda表达式格式要求：
@@ -10,14 +11,14 @@ package com.mjie.lambda
     并且可以在调用方法圆括号去使用
  */
 
-val multiply: (Int, Int) -> Int = {a, b -> a * b}
-val add: (Int, Int) -> Int = {a, b -> a + b}
-val subtract = {a: Int, b: Int -> a - b}
+val multiply: (Int, Int) -> Int = { a, b -> a * b }
+val add: (Int, Int) -> Int = { a, b -> a + b }
+val subtract = { a: Int, b: Int -> a - b }
 
-val action1: () -> Unit = { println("hello world")}
-val action2 = { println("hello world")}
+val action1: () -> Unit = { println("hello world") }
+val action2 = { println("hello world") }
 
-val action3: (Int, Int) -> Int? = {_, _ -> null}
+val action3: (Int, Int) -> Int? = { _, _ -> null }
 val action4: ((Int, Int) -> Int)? = null
 
 

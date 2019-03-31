@@ -19,16 +19,15 @@ Delegates.vetoable的调用时机与Delegates.observable相反，它是在对属
 的返回结果是true还是false，来决定是否真正对属性进行赋值
  */
 class MyPerson2 {
-    var age: Int by Delegates.observable(20) {
-        property, oldValue, newValue ->
+    var age: Int by Delegates.observable(20) { property, oldValue, newValue ->
         println("${property.name}, oldValue: $oldValue, newValue: $newValue")
     }
 }
 
 
 class MyPerson3 {
-    var age: Int by Delegates.vetoable(20) {
-        _, oldValue, newValue -> when {
+    var age: Int by Delegates.vetoable(20) { _, oldValue, newValue ->
+        when {
             oldValue <= newValue -> true
             else -> false
         }
@@ -48,7 +47,7 @@ fun main(args: Array<String>) {
 
     println("-----------------------------")
 
-    val  person3 = MyPerson3()
+    val person3 = MyPerson3()
     println(person3.age)
 
     person3.age = 40

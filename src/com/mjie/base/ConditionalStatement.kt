@@ -11,7 +11,7 @@ fun main(args: Array<String>) {
     val y = 8
     if (x > y)
         maxNumber = x
-     else
+    else
         maxNumber = y
 
     println("--------------------")

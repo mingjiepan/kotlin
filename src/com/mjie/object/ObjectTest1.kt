@@ -11,7 +11,7 @@ package com.mjie.`object`
 class EmptyClass
 
 class MyClass constructor(username: String) {
-    private val username:String = username.toUpperCase()
+    private val username: String = username.toUpperCase()
 
     init {
         println("username : $username")

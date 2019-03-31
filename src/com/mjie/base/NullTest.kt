@@ -14,12 +14,12 @@ fun main(args: Array<String>) {
  * Java那样，进行强制类型转换
  * 此处还有一个注意点，返回值Int? 中?号表示此方法可能返回null，若是没有加问号，则方法一定不会返回null
  */
-fun str2Int(str: Any) : Int? {
+fun str2Int(str: Any): Int? {
     if (str is String) {
         val result: Int
         try {
-            result =  str.toInt()
-        } catch (ex : Exception) {
+            result = str.toInt()
+        } catch (ex: Exception) {
             return null
         }
         return result

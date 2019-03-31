@@ -1,4 +1,5 @@
 package com.mjie.function
+
 /*
     可变参数
  */

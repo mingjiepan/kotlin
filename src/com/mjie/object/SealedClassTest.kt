@@ -11,14 +11,14 @@ package com.mjie.`object`
 
 sealed class Calculator
 
-class Add: Calculator()
+class Add : Calculator()
 
-class Subtract: Calculator()
+class Subtract : Calculator()
 
-class Multiply: Calculator()
+class Multiply : Calculator()
 
-fun calculate(a:Int, b:Int, cal: Calculator) = when (cal) {
-    is Add -> a +b
+fun calculate(a: Int, b: Int, cal: Calculator) = when (cal) {
+    is Add -> a + b
     is Subtract -> a - b
     else -> a * b
 }

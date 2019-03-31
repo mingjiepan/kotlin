@@ -17,18 +17,18 @@ fun main(args: Array<String>) {
     println("multiply = $multiply")
 }
 
-fun sayHello (name: String) : Unit {
+fun sayHello(name: String): Unit {
     println("hello $name")
 }
 
-fun defaultResult() : Int = 10
+fun defaultResult(): Int = 10
 
-fun calculate (a: Int, b: Int): Int? {
+fun calculate(a: Int, b: Int): Int? {
     if (a == 1)
         return null
     return a + b
 }
 
-fun multiply (a: Int, b: Int): Int {
+fun multiply(a: Int, b: Int): Int {
     return a * b
 }

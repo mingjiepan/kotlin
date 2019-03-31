@@ -5,13 +5,13 @@ package com.mjie.base
  */
 fun main(args: Array<String>) {
 
-    var arr:IntArray = intArrayOf(2, 4, 6, 8, 10)
+    var arr: IntArray = intArrayOf(2, 4, 6, 8, 10)
 
-    arr.forEach { println(it)}
+    arr.forEach { println(it) }
 
     println("-------------------------")
 
-    for (a:Int in arr) {
+    for (a: Int in arr) {
         println(a)
     }
 

@@ -1,7 +1,5 @@
 package com.mjie.lambda
 
-import sun.management.snmp.jvminstr.JvmThreadInstanceEntryImpl.ThreadStateMap.Byte1.other
-
 /*
     带接收者的函数字面值
     kotlin提供了这样一种功能：可以通过指定的接收者对象来调用一个函数字面值
@@ -11,8 +9,9 @@ import sun.management.snmp.jvminstr.JvmThreadInstanceEntryImpl.ThreadStateMap.By
  */
 fun main(args: Array<String>) {
     val substract: Int.(other: Int) -> Int = {other ->  this - other}
+    val substract2: Int.(Int) -> Int = {this - it}
 
-    println(1.substract(3))
+    println(1.substract2(3))
     println("------------------")
 
     /*

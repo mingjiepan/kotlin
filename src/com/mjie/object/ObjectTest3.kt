@@ -1,7 +1,7 @@
 package com.mjie.`object`
 
-class Student (private val username:String, private val age: Int, private val address:String) {
-    fun printInfo () {
+class Student(private val username: String, private val age: Int, private val address: String) {
+    fun printInfo() {
         println("username : $username, age: $age, address:$address")
     }
 }

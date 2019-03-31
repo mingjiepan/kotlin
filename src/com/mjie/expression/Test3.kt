@@ -9,7 +9,7 @@ fun main(args: Array<String>) {
     var i = 100
 
     var myObject = object {
-        fun myMethod()  {
+        fun myMethod() {
             i++
         }
     }

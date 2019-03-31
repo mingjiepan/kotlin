@@ -36,11 +36,13 @@ package com.mjie.`object`.generic
 class MyClass<out T, in M>(t: T, m: M) {
     private var t: T
     private var m: M
+
     init {
         this.t = t
         this.m = m
     }
-    fun get():T = this.t
+
+    fun get(): T = this.t
 
     fun set(m: M) {
         this.m = m

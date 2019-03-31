@@ -5,11 +5,11 @@ package com.mjie.`object`.extension
  */
 
 class MyTest2 {
-   companion object {
-       fun echo() {
-           println("myTest2")
-       }
-   }
+    companion object {
+        fun echo() {
+            println("myTest2")
+        }
+    }
 }
 
 fun MyTest2.Companion.sayHello() {

@@ -13,14 +13,14 @@ map委托
 map中的key要和类中的属性名字保持一致
  */
 
-class Student (map: Map<String, Any?>) {
+class Student(map: Map<String, Any?>) {
     val name: String by map
     val address: String by map
     val age: Int by map
     val birthday: Date by map
 }
 
-class Student2 (map: MutableMap<String, Any?>) {
+class Student2(map: MutableMap<String, Any?>) {
     val address: String by map
 }
 

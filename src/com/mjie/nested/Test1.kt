@@ -19,6 +19,7 @@ class OuterClass {
         class LocalNestedClass {
             val name: String = "world"
         }
+
         var localNestedClass = LocalNestedClass()
         return localNestedClass.name
     }

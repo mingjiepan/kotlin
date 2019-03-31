@@ -10,7 +10,7 @@ open class TestParent3
 
 class TestChild3 : TestParent3()
 
-fun TestParent3.echo () {
+fun TestParent3.echo() {
     println("TestParent3 echo")
 }
 

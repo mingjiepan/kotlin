@@ -4,7 +4,7 @@ enum class Season {
     SPRING, SUMMER, AUTUMN, WINTER
 }
 
-enum class Season2 (val temperature: Int) {
+enum class Season2(val temperature: Int) {
     SPRING(10), AUTUMN(20), SUMMER(30), WINTER(0)
 }
 
@@ -22,6 +22,7 @@ enum class Season3 {
         override fun getSession(): Season3 = WINTER
     }
     ;
+
     abstract fun getSession(): Season3
 }
 

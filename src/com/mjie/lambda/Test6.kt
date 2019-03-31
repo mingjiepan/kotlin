@@ -1,9 +1,10 @@
 package com.mjie.lambda
+
 /*
     匿名函数
  */
 fun main(args: Array<String>) {
-    fun(a: Int, b:Int) = a + b
+    fun(a: Int, b: Int) = a + b
     fun(a: Int, b: Int): Int {
         return a + b
     }
