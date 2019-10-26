@@ -9,22 +9,25 @@ package com.mjie.`object`
  * 4. 密封类是抽象的类
  * */
 
-sealed class Calculator
+sealed class Calculator {
 
-class Add : Calculator()
-
-class Subtract : Calculator()
-
-class Multiply : Calculator()
-
-fun calculate(a: Int, b: Int, cal: Calculator) = when (cal) {
-    is Add -> a + b
-    is Subtract -> a - b
-    else -> a * b
+    object Add : Calculator() {
+        fun method(a: Int, b: Int): Int {
+            return a + b
+        }
+    }
 }
 
-fun main(args: Array<String>) {
-    var result = calculate(1, 2, Add())
-    println(result)
-    println("----------")
+class Decrease : Calculator() {
+    fun method(a: Int, b: Int): Int {
+        return a - b
+    }
+}
+
+fun main() {
+    var addClass = Calculator.Add
+    addClass.method(1, 2)
+
+    var deClass = Decrease()
+    deClass.method(2, 1)
 }

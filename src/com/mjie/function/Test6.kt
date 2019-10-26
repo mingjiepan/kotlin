@@ -1,15 +1,1 @@
-package com.mjie.function
-
-/*
-   内联函数
- */
-inline fun calculate(a: Int, b: Int) = a + b
-
-fun main(args: Array<String>) {
-    val result = calculate(1, 2)
-    println(result)
-}
-
-
-
-
+package com.mjie.function/*   内联函数   方法A调用方法B，若方法B被声明为内联函数，那么编译器会将方法B的字节码拷贝一份放到方法A的调用处。   若方法B没有被声明为inline，那么方法A会执行调用方法B，后拿到方法B的返回结果，后再将值拿到方法A调用处参与运算。   可通过字节码查看，Javap -c com.mjie.function.Test6Kt */inline fun calculate(a: Int, b: Int) = a + bfun echo(name: String) {    println("hello $name")}fun main() {    val result = calculate(1, 2)    println(result)    echo("zhangsan")}

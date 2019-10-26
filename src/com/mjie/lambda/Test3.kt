@@ -12,7 +12,7 @@ fun String.filter(predicate: (Char) -> Boolean) : String {
     return sb.toString()
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val str = "hello123world"
     val predicate: (Char) -> Boolean = {
         it.isLetter()

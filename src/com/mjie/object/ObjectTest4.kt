@@ -25,3 +25,10 @@ class Child2: Parent2 {
 
     }
 }
+
+
+class myClass {
+    constructor(name: String): super() {
+
+    }
+}

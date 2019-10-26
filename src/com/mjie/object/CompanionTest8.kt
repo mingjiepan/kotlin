@@ -6,20 +6,6 @@ object MyObject {
         println("object")
     }
 }
-
-
-fun main(args: Array<String>) {
-    MyObject.method()
-
-    println("-----------------")
-    MyTest.method()
-    println(MyTest.a)
-
-    println("------------------")
-    println(MyTest.MyObject.javaClass)
-
-}
-
 /**
  * companion object, 伴生对象
  * 在kotlin中，与Java不同的是，类是没有static方法。
@@ -47,4 +33,16 @@ class MyTest {
             println("companion object method")
         }
     }
+}
+
+fun main() {
+    MyObject.method()
+
+    println("-----------------")
+    MyTest.method()
+    println(MyTest.a)
+
+    println("------------------")
+    println(MyTest.MyObject.javaClass)
+
 }

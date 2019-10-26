@@ -15,17 +15,26 @@ class Student2 private constructor() {
 这个不带参数的构造方法会使用这些参数的默认值，这样做的目的在于可以跟spring等框架更好的集成。
 */
 class Student3 constructor(private val username: String = "zhangsan") {
-
     fun printInfo() {
         println("username : $username")
     }
+}
+
+
+class Student4 constructor(var username:String = "lisi", age: Int = 2) {
 }
 
 fun main(args: Array<String>) {
     val student = Student("zhangsan", 20, "xiamen")
     student.printInfo()
 
+    println("-------------------")
 
     val student3 = Student3()
     student3.printInfo()
+
+    println("-------------------")
+
+    val student4 = Student4()
+    println(student4.username)
 }

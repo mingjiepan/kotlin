@@ -33,5 +33,8 @@ open class A {
 }
 
 class B: A() {
-    override fun method(a: Int, b: Int): Int = a - b
+    override fun method(a: Int, b: Int): Int {
+        println(" a - b = ${a -b }")
+        return a - b
+    }
 }

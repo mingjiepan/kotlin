@@ -13,6 +13,9 @@ package com.mjie.`object`
 class LateinitTest1 {
     lateinit var name:String
 
+    //非原生数据类型
+//    lateinit var age:Int
+
     fun init(name:String) {
         this.name = name
     }

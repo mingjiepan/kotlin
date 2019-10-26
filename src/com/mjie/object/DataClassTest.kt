@@ -5,7 +5,7 @@ package com.mjie.`object`
  * 数据类需要满足以下要求：
  * 1. primary constructor 至少要有一个参数
  * 2. 所有的primary constructor参数都需要被标记为val或var
- * 3. 数据类不能是抽象的、open的、sealed的记忆inner的
+ * 3. 数据类不能是抽象的、open的、sealed、inner的
  *
  * 对于数据类，编译器会自动生成如下内容
  * 1. equals和hashcode
@@ -23,7 +23,8 @@ package com.mjie.`object`
  * 在primary constructor中有多少个方法，就会依次生成对应的component1、component2,.....
  * 这些方法返回的就是对应字段的值，componentN方法是用来实现解构声明的
  */
-data class DataClass (val age: Int, var name:String, var address:String)
+data class DataClass (val age: Int, var name:String, var address:String) {
+}
 
 /**
  * 在jvm平台上，如果生成的类需要拥有无参构造方法，那么就需要为所有属性指定默认值
@@ -42,4 +43,12 @@ fun main(args: Array<String>) {
     println("-----------")
     var (age, name, address) = data1
     println("$age, $name, $address")
+
+
+    println("------------")
+
+    val component1 = data1.component1()
+    println(component1)
+    val component2 = data2.component2()
+    println(component2)
 }

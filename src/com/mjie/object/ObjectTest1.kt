@@ -11,15 +11,13 @@ package com.mjie.`object`
 class EmptyClass
 
 class MyClass constructor(username: String) {
-    private val username: String = username.toUpperCase()
 
-    init {
-        println("username : $username")
-    }
+    var username:String = username
 }
 
-fun main(args: Array<String>) {
+fun main() {
     var myClass = MyClass("zhangsan")
+    println(myClass.username)
 }
 
 
